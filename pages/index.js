@@ -1,8 +1,12 @@
+import Head from 'next/head'
 import Header from '../components/header'
 
 export default function Home() {
   return (
-    <div className='bg-red-400' >
+    <div>
+      <Head>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+      </Head>
       <Header/>
     </div>
   )
