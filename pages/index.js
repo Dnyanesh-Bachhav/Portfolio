@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Header from '../components/header'
 
 export default function Home() {
@@ -7,6 +8,9 @@ export default function Home() {
       <Head>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
       </Head>
+      <Script>
+
+      </Script>
       <Header/>
     </div>
   )
