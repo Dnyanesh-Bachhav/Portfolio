@@ -5,7 +5,7 @@ function Header(){
             <header className={styles.header}>
                 <nav className={styles.nav} >
                     <a href="#" className="nav__logo">Dnyanesh Bachhav</a>
-                    <div className={styles.nav__menu}>
+                    <div className={styles.nav__menu} id="nav-menu">
                         <ul className={styles.Header}>
                             <li className={styles.nav__item}>
                                 <a href="#home" className={styles.nav__link}>
