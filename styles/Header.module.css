@@ -83,3 +83,6 @@
 .nav__close:hover{
     color: var(--first-color-alt);
 }
+.showMenu{
+    bottom: 0;
+}

@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
       </Head>
       <Header/>
-      {/* <Script src='../js/script.js' strategy='lazyOnLoad' /> */}
     </div>
   )
 }
