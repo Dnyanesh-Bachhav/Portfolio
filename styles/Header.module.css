@@ -31,9 +31,16 @@
 .nav__logo:hover{
     color: var(--first-color);
 }
+.nav__btns{
+    display: inline-block;
+    width: 100%;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
 .nav__toggle{
     font-size: 1.1rem;
     cursor: pointer;
+    float: right;
 }
 .nav__toggle:hover{
     color: var(--first-color);
@@ -53,8 +60,11 @@
     }
 }
 .nav__list{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 .nav__link{
     display: flex;
