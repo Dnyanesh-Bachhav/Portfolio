@@ -7,10 +7,9 @@ export default function Home() {
     <div>
       <Head>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-        <script src="../js/script.js"></script>
+        <script src="./script.js"></script>
       </Head>
-      <Script>
-      </Script>
+      {/* <Script src='./script.js' strategy='lazyOnLoad' /> */}
       <Header/>
     </div>
   )

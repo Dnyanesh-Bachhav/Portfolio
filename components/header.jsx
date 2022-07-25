@@ -1,12 +1,13 @@
+import Script from "next/script";
 import styles from "../styles/Header.module.css";
 function Header(){
     return(
         <div>
-            <header className={styles.header}>
-                <nav className={styles.nav} >
-                    <a href="#" className="nav__logo">Dnyanesh Bachhav</a>
+            <header className={styles.header} id="header">
+                <nav className={[...styles.nav,styles.container]}>
+                    <a href="#" className={styles.nav__logo}>Dnyanesh Bachhav</a>
                     <div className={styles.nav__menu} id="nav-menu">
-                        <ul className={styles.Header}>
+                        <ul className={[...styles.nav__list,styles.grid]}>
                             <li className={styles.nav__item}>
                                 <a href="#home" className={styles.nav__link}>
                                     <i class="uil uil-estate" className={styles.nav__icon}></i>
@@ -46,6 +47,7 @@ function Header(){
                         </div>
                     </div>
                 </nav>
+                  
             </header>
         </div>
     );

@@ -1,38 +1,42 @@
 .grid{
     display: grid;
     gap: 1.5rem;
-    background-color: blueviolet;
+}
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
 }
 .header{
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-    /* z-index: ; */
-    background-color: aliceblue;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
 }
 /* Navbar */
 .nav{
     max-width: 968px;
-    /* height: ; */
+    height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav__logo,
 .nav__toggle{
-    color: black;
-    font-weight: 500;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
 }
 .nav__logo:hover{
-    color: blueviolet;
+    color: var(--first-color);
 }
 .nav__toggle{
     font-size: 1.1rem;
     cursor: pointer;
 }
 .nav__toggle:hover{
-    color: blueviolet;
+    color: var(--first-color);
 }
 
 @media screen and (max-width: 767px){
@@ -41,7 +45,7 @@
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: aliceblue;
+        background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
         border-radius: 1.5rem 1.5rem 0 0;
@@ -56,13 +60,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: large;
-    color: black;
-    font-weight: normal;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
 }
 
 .nav__link:hover{
-    color: aqua;
+    color: var(--first-color);
 }
  
 .nav__icon{
@@ -74,8 +78,8 @@
     bottom: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: blueviolet;
+    color: var(--first-color);
 }
 .nav__close:hover{
-    color: aqua;
+    color: var(--first-color-alt);
 }
