@@ -17,8 +17,15 @@ function Info() {
                             </a>
                         </div>
                         <div className="home__img">
-                            <Image src="/blob.svg" width={50} height={50} />
-
+                            <Image src="/blob.svg" width={125} height={125} />
+                        </div>
+                        <div className="home__data">
+                            <h1 className="home__title">Hi, I'm Dnyanesh</h1>
+                            <h3 className="home__subtitle">Web Developer</h3>
+                            <p className="home__description"></p>
+                            <a href="" className="button button--flex">
+                                
+                            </a>
                         </div>
                     </div>
                 </div>
