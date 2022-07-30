@@ -30,7 +30,7 @@ function Header() {
     return (
         <div>
             <header className={styles.header} id="header">
-                <nav className={{...styles.nav, ...styles.container}}>
+                <nav className={styles["nav"]+" "+styles["container"]}>
                     <div className={styles.nav__menu} id="nav-menu">
                         <ul className={styles.nav__list}>
                             <li className={styles.nav__item}>
