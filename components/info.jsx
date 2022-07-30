@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import logo from "../public/blob.svg";
+import { FIRST_NAME } from './constants';
 function Info() {
     return (
         <>
@@ -21,9 +22,9 @@ function Info() {
                             <Image src={logo} />
                         </div>
                         <div className="home__data">
-                            <h1 className="home__title">Hi, I'm Dnyanesh</h1>
+                            <h1 className="home__title">Hi, I'm {FIRST_NAME}</h1>
                             <h3 className="home__subtitle">Web Developer</h3>
-                            <p className="home__description">Lorem ipsum dolor sit amet sunt dignissimos iusto earum non iste! Nulla nemo quos corrupti hic ipsum.</p>
+                            <p className="home__description">I am open-source enthusiast, I love to play open source games non iste! Nulla nemo quos corrupti hic ipsum.</p>
                             <a href="" className="button button__flex">
                                 Contact Me <span className="button__icon"><i className="uil uil-message"></i></span>
                             </a>

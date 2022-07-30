@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { STUDENT_NAME } from "./constants";
 function Header() {
     function handleClick() {
         console.log("Hello World...!!!");
@@ -66,7 +67,7 @@ function Header() {
                         <div className="nav__close"><i className="uil uil-times" id="nav-close" onClick={handleClose}></i></div>
                     </div>
                     <div className="nav__btns">
-                        <a href="#" className="nav__logo">Dnyanesh Bachhav</a>
+                        <a href="#" className="nav__logo">{STUDENT_NAME}</a>
                         <div className="nav__toggle" id="nav-toggle" onClick={handleClick}>
                             <i className="uil uil-apps"></i>
                         </div>
