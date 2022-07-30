@@ -100,3 +100,8 @@ img{
 .section__subtitle{
     text-decoration: center;
 }
+
+.home__blob{
+    width: 200px;
+    fill: var(--first-color);
+}
