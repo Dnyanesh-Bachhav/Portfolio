@@ -1,5 +1,4 @@
 import Script from "next/script";
-import styles from "../styles/Header.module.css";
 function Header() {
     function handleClick() {
         console.log("Hello World...!!!");
@@ -67,8 +66,8 @@ function Header() {
                         <div className="nav__close"><i className="uil uil-times" id="nav-close" onClick={handleClose}></i></div>
                     </div>
                     <div className="nav__btns">
-                        <a href="#" className={styles.nav__logo}>Dnyanesh Bachhav</a>
-                        <div className={styles.nav__toggle} id="nav-toggle" onClick={handleClick}>
+                        <a href="#" className="nav__logo">Dnyanesh Bachhav</a>
+                        <div className="nav__toggle" id="nav-toggle" onClick={handleClick}>
                             <i className="uil uil-apps"></i>
                         </div>
                     </div>
