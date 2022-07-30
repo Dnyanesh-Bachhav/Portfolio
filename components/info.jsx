@@ -4,29 +4,29 @@ import logo from "../public/blob.svg";
 function Info() {
     return (
         <>
-        <h1>Hello world...!!!</h1>
-            <section className={ styles["home"]+" "+ styles["section"]} id="home">
-                <div className={ `${styles["home__container"]} ${styles["container"]} ${styles["grid"]}`}>
-                    <div className={styles["home__content"]+" "+ styles["grid"]}>
+            <section className="home section" id="home">
+                <div className="home__container container grid">
+                    <div className="home__content grid">
                         <div className={styles.home__social}>
-                            <a href="" className={ styles.home__social__icon}>
+                            <a href="" className="home__social__icon">
+                                
                                 <i className="uil uil-linkedin-alt"></i>
                             </a>
-                            <a href="" className={ styles.home__social__icon}>
+                            <a href="" className="home__social__icon">
                                 <i className="uil uil-github-alt"></i>
                             </a>
-                            <a href="" className={ styles.home__social__icon}>
+                            <a href="" className="home__social__icon">
                                 <i className="uil uil-instagram"></i>
                             </a>
                         </div>
-                        <div className={styles.home__img}>
+                        <div className="home__img">
                             <Image src={logo} />
                         </div>
-                        <div className={styles.home__data}>
+                        <div className="home__data">
                             <h1 className={styles.home__title}>Hi, I'm Dnyanesh</h1>
                             <h3 className={styles.home__subtitle}>Web Developer</h3>
                             <p className={styles.home__description}>Lorem ipsum dolor sit amet sunt dignissimos iusto earum non iste! Nulla nemo quos corrupti hic ipsum.</p>
-                            <a href="" className={styles["button"]+" "+styles["button__flex"]}>
+                            <a href="" className="button button__flex">
                                 Contact Me <span className={styles.button__icon}><i className="uil uil-message"></i></span>
                             </a>
                         </div>
