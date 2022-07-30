@@ -4,6 +4,7 @@ import logo from "../public/blob.svg";
 function Info() {
     return (
         <>
+        <h1>Hello world...!!!</h1>
             <section className={ styles["home"]+" "+ styles["section"]} id="home">
                 <div className={ `${styles["home__container"]} ${styles["container"]} ${styles["grid"]}`}>
                     <div className={styles["home__content"]+" "+ styles["grid"]}>
