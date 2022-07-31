@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../assets/images/jitesh_circular.png";
+import logo from "../assets/images/Dnyanesh_Bachhav_Circular.png";
 import { ABOUT_DESCRIPTION, STUDENT_NAME } from "./constants";
 function About(){
     return(
@@ -8,7 +8,9 @@ function About(){
             <h2 className="section__title">About me</h2>
             <span className="section__subtitle">My Introduction</span>
             <div className="about__container container grid">
+                <div className="img__container">
                 <Image src={logo} alt={STUDENT_NAME} className="about__img" />
+                </div>
 
                 <div className="about__data">
                     <p className="about__description">{ABOUT_DESCRIPTION}</p>

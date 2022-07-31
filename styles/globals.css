@@ -355,12 +355,14 @@ img {
 }
 
 /*==================== ABOUT ====================*/
-.about__img{
-  width: 200px;
-  height: 20%;
-  border-radius: 0.5rem;
+.img__container{
+  max-width: 200px;
   justify-self: center;
   align-self: center;
+
+}
+.about__img{
+  border-radius: 0.5rem;
 }
 .about__description{
   text-align: center;

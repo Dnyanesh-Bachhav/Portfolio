@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import logo from "../public/blob.svg";
+import Logo from "../public/blob.svg";
+// import Logo from "../components/logo";
 import { FIRST_NAME } from './constants';
 function Info() {
     return (
@@ -19,7 +20,8 @@ function Info() {
                             </a>
                         </div>
                         <div className="home__img">
-                            <Image src={logo} />
+                            <Image src={Logo} width="125" height={125} />
+                            {/* <Logo/> */}
                         </div>
                         <div className="home__data">
                             <h1 className="home__title">Hi, I'm {FIRST_NAME}</h1>
