@@ -40,7 +40,7 @@ function Header() {
                                 </a>
                             </li>
                             <li className="nav__item">
-                                <a href="#About" className="nav__link">
+                                <a href="#about" className="nav__link">
                                     <div className="nav__icon"><i className="uil uil-user"></i></div>
                                     About
                                 </a>
