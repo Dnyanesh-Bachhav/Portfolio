@@ -1,4 +1,4 @@
-import { FIRST_NAME, STUDENT_NAME } from "./constants";
+import { FIRST_NAME, MAIN_ROLE, STUDENT_NAME } from "./constants";
 
 function Footer(){
     return(
@@ -7,7 +7,7 @@ function Footer(){
                 <div className="footer__container container grid">
                     <div>
                         <h1 className="footer__title">{FIRST_NAME}</h1>
-                        <span className="footer__subtitle">Web Developer</span>
+                        <span className="footer__subtitle">{MAIN_ROLE}</span>
                     </div>
 
                     <ul className="footer__links">
@@ -22,14 +22,14 @@ function Footer(){
                         </li>
                     </ul>
                     <div className="footer__socials">
-                        <a href="#" className="footer__social">
-                        <i class="uil uil-instagram"></i>
+                        <a href="#" className="footer__social" target="_blank">
+                            <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="#" className="footer__social">
-                        <i class="uil uil-linkedin-alt"></i>
+                        <a href="#" className="footer__social" target="_blank">
+                            <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="#" className="footer__social">
-                        <i class="uil uil-youtube"></i>
+                        <a href="https://www.youtube.com/channel/UCSCnbpXEUH2Pv9imvuFVrqg" className="footer__social" target="_blank">
+                            <i class="uil uil-youtube"></i>
                         </a>
                     </div>
                 </div>
