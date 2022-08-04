@@ -1,4 +1,9 @@
 👉👉 This is my portfolio website...
+Technologies used:
+Node.js
+Next.js
+React.js
+Tailwind
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
