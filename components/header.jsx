@@ -1,14 +1,12 @@
 import Script from "next/script";
-import { STUDENT_NAME } from "./constants";
+import { FIRST_NAME, STUDENT_NAME } from "./constants";
 function Header() {
     function handleClick() {
-        console.log("Hello World...!!!");
         const navMenu = document.getElementById("nav-menu");
         const navToggle = document.getElementById("nav-toggle");
         
         if (navToggle) {
             navToggle.addEventListener('click', () => {
-                console.log("Clicked...");
                 navMenu.classList.add("showMenu");
             })
         }
@@ -30,44 +28,46 @@ function Header() {
     return (
         <div>
             <header className="header" id="header">
-                <nav className="nav">
+                <nav className="nav container">
+                <a href="#" className="nav__logo">{FIRST_NAME}</a>
                     <div className="nav__menu" id="nav-menu">
-                        <ul className="nav__list">
+                        <ul className="nav__list grid">
                             <li className="nav__item">
                                 <a href="#home" className="nav__link">
-                                    <div className="nav__icon"><i className="uil uil-estate"></i></div>
+                                    <i className="uil uil-estate nav__icon"></i>
                                     Home
                                 </a>
                             </li>
                             <li className="nav__item">
                                 <a href="#about" className="nav__link">
-                                    <div className="nav__icon"><i className="uil uil-user"></i></div>
+                                    <i className="uil uil-user nav__icon"></i>
                                     About
                                 </a>
                             </li>
                             <li className="nav__item">
                                 <a href="#skills" className="nav__link">
-                                    <div className="nav__icon"><i className="uil uil-file-alt"></i></div>
+                                    <i className="uil uil-file-alt nav__icon"></i>
                                     Skills
                                 </a>
                             </li>
                             <li className="nav__item">
                                 <a href="#portfolio" className="nav__link">
-                                    <div className="nav__icon"><i className="uil uil-scenery"></i></div>
+                                    <i className="uil uil-scenery nav__icon"></i>
                                     Portfolio
                                 </a>
                             </li>
                             <li className="nav__item">
                                 <a href="#contact" className="nav__link">
-                                    <div className="nav__icon"><i className="uil uil-message"></i></div>
+                                    <i className="uil uil-message nav__icon"></i>
                                     Contact
                                 </a>
                             </li>
                         </ul>
-                        <div className="nav__close"><i className="uil uil-times" id="nav-close" onClick={handleClose}></i></div>
+                        <i className="uil uil-times nav__close" id="nav-close" onClick={handleClose}></i>
                     </div>
+
                     <div className="nav__btns">
-                        <a href="#" className="nav__logo">{STUDENT_NAME}</a>
+                    <i class="uil uil-moon change__theme" id="theme__button"></i>
                         <div className="nav__toggle" id="nav-toggle" onClick={handleClick}>
                             <i className="uil uil-apps"></i>
                         </div>
