@@ -44,9 +44,9 @@ function Skills(){
           },
         ];
     return(
-        <section className="skills section" id="skills">
-            <h2 className="section__title">Skills</h2>
-            <span className="section__subtitle">My Technical level</span>
+        // <section className="skills section" id="skills">
+        //     <h2 className="section__title">Skills</h2>
+        //     <span className="section__subtitle">My Technical level</span>
             
     <div id="experience" className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
@@ -57,7 +57,7 @@ function Skills(){
           me and.
         </p>
 
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8" style={{display: 'grid'}} >
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
@@ -71,7 +71,7 @@ function Skills(){
         </div>
       </div>
     </div>
-    </section>
+    // </section>
     );
 }
 export default Skills;
