@@ -86,10 +86,11 @@ body.dark-theme{
       --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 /*========== Button Dark/Light ==========*/
-.nav__btns{
+/* .nav__btns{
   display: flex;
   align-items: center;
-}
+  justify-content: end;
+} */
 .change__theme{
   font-size: 1.25rem;
   color: var(--title-color);
@@ -214,10 +215,11 @@ img {
     color: var(--first-color);
 }
 .nav__btns{
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+    /* padding-bottom: 0.5rem; */
 }
 .nav__toggle{
     font-size: 1.1rem;
