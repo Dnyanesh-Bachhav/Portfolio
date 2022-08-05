@@ -1,8 +1,15 @@
 import Image from 'next/image';
-import Logo from "../public/blob.svg";
-// import Logo from "../components/logo";
+// import Logo from "../public/blob.svg";
+import perfil from "../public/perfil.png";
+import Logo from "../components/logo";
 import { FIRST_NAME } from './constants';
 function Info() {
+    function Image_Blob(){
+        return(
+            <image src="/perfil.png" width={24} height={24} />
+                            
+        );
+    }
     return (
         <>
             <section className="home section" id="home">
@@ -20,8 +27,8 @@ function Info() {
                             </a>
                         </div>
                         <div className="home__img">
-                            <Image src={Logo} width="125" height={125} />
-                            {/* <Logo/> */}
+                            {/* <Image_Blob/> */}
+                            <Logo/>
                         </div>
                         <div className="home__data">
                             <h1 className="home__title">Hi, I'm {FIRST_NAME}</h1>

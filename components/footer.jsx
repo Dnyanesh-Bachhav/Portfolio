@@ -2,7 +2,7 @@ import { FIRST_NAME, MAIN_ROLE, STUDENT_NAME } from "./constants";
 
 function Footer(){
     return(
-        <footer>
+        <footer class="footer">
             <div className="footer__bg">
                 <div className="footer__container container grid">
                     <div>
@@ -12,13 +12,13 @@ function Footer(){
 
                     <ul className="footer__links">
                         <li>
-                            <a href="#" className="footer__link">Skills</a>
+                            <a href="#skills" className="footer__link">Skills</a>
                         </li>
                         <li>
-                            <a href="#" className="footer__link">Portfolio</a>
+                            <a href="#portfolio" className="footer__link">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#" className="footer__link">Contact</a>
+                            <a href="#contact" className="footer__link">Contact</a>
                         </li>
                     </ul>
                     <div className="footer__socials">

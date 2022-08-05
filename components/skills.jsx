@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import React_Logo from '../assets/images/React_Logo.png';
 function Skills(){
         const experiences = [
           {
@@ -51,14 +51,14 @@ function Skills(){
     <div id="experience" className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
 
-        <div className="grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8" style={{display: 'grid'}} >
+        <div className="grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-8" style={{display: 'grid'}} >
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
               className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
               odd:shadow-rose-400 even:shadow-blue-400"
             >
-              {/* <Image src={src} width="64px" height="64px" alt={title} /> */}
+              <Image src={React_Logo} width="64px" height="64px" alt={title} />
               <h3 className="font-light">{title}</h3>
             </div>
           ))}

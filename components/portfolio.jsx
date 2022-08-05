@@ -12,8 +12,8 @@ function Portfolio(){
                         {/* <img src="../assets/images/portfolio2.jpg" alt="" srcset="" /> */}
                     </div>
                     <h3 className="project__title">Portfolio item title</h3>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button">Github</a>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button ml-2">Live Demo</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
 
                 <article className="portfolio__item">
@@ -21,8 +21,8 @@ function Portfolio(){
                     <Image src={portfolio2} />
                     </div>
                     <h3 className="project__title">Portfolio item title</h3>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button">Github</a>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button ml-2">Live Demo</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
 
                 <article className="portfolio__item">
@@ -30,8 +30,8 @@ function Portfolio(){
                         <Image src={portfolio2} />
                     </div>
                     <h3 className="project__title">Portfolio item title</h3>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button">Github</a>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button ml-2">Live Demo</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
 
                 <article className="portfolio__item">
@@ -39,8 +39,8 @@ function Portfolio(){
                         <Image src={portfolio2} />
                     </div>
                     <h3 className="project__title">Portfolio item title</h3>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button">Github</a>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button ml-2">Live Demo</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
 
                 <article className="portfolio__item">
@@ -48,8 +48,8 @@ function Portfolio(){
                         <Image src={portfolio2} />
                     </div>
                     <h3 className="project__title">Portfolio item title</h3>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button">Github</a>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button ml-2">Live Demo</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
             </div>
         </section>
