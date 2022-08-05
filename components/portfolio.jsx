@@ -11,7 +11,7 @@ function Portfolio(){
                         <Image src={portfolio2} />
                         {/* <img src="../assets/images/portfolio2.jpg" alt="" srcset="" /> */}
                     </div>
-                    <h3 className="project__title">Portfolio item title</h3>
+                    <h3 className="project__title">Portfolio item title 1</h3>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
@@ -20,7 +20,7 @@ function Portfolio(){
                     <div className="portfolio__item__image">
                     <Image src={portfolio2} />
                     </div>
-                    <h3 className="project__title">Portfolio item title</h3>
+                    <h3 className="project__title">Portfolio item title 2</h3>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
@@ -29,7 +29,7 @@ function Portfolio(){
                     <div className="portfolio__item__image">
                         <Image src={portfolio2} />
                     </div>
-                    <h3 className="project__title">Portfolio item title</h3>
+                    <h3 className="project__title">Portfolio item title 3</h3>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
@@ -38,7 +38,7 @@ function Portfolio(){
                     <div className="portfolio__item__image">
                         <Image src={portfolio2} />
                     </div>
-                    <h3 className="project__title">Portfolio item title</h3>
+                    <h3 className="project__title">Portfolio item title 4</h3>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
@@ -47,7 +47,7 @@ function Portfolio(){
                     <div className="portfolio__item__image">
                         <Image src={portfolio2} />
                     </div>
-                    <h3 className="project__title">Portfolio item title</h3>
+                    <h3 className="project__title">Portfolio item title 5</h3>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio">Github</a>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
