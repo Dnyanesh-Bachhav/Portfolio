@@ -16,15 +16,15 @@ function About(){
                     <p className="about__description">{ABOUT_DESCRIPTION}</p>
                     <div className="about__info">
                         <div>
-                            <span className="about__info__title">15+</span>
+                            <span className="about__info__title">5+</span>
                             <span className="about__info__name">Completed<br/> project</span>
                         </div>
                         <div>
-                            <span className="about__info__title">20+</span>
+                            <span className="about__info__title">4+</span>
                             <span className="about__info__name">Years<br/> experience</span>
                         </div>
                         <div>
-                            <span className="about__info__title">2+</span>
+                            <span className="about__info__title">1+</span>
                             <span className="about__info__name">Companies<br/> worked</span>
                         </div>
                     </div>

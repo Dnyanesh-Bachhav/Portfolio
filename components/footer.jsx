@@ -1,4 +1,4 @@
-import { FIRST_NAME, MAIN_ROLE, STUDENT_NAME } from "./constants";
+import { FIRST_NAME, INSTAGRAM_LINK, LINKEDIN_LINK, MAIN_ROLE, STUDENT_NAME, YOUTUBE_LINK } from "./constants";
 
 function Footer(){
     return(
@@ -22,13 +22,13 @@ function Footer(){
                         </li>
                     </ul>
                     <div className="footer__socials">
-                        <a href="#" className="footer__social" target="_blank">
+                        <a href={INSTAGRAM_LINK} className="footer__social" target="_blank">
                             <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="#" className="footer__social" target="_blank">
+                        <a href={LINKEDIN_LINK} className="footer__social" target="_blank">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="https://www.youtube.com/channel/UCSCnbpXEUH2Pv9imvuFVrqg" className="footer__social" target="_blank">
+                        <a href={YOUTUBE_LINK} className="footer__social" target="_blank">
                             <i class="uil uil-youtube"></i>
                         </a>
                     </div>

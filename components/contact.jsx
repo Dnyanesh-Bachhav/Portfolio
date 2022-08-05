@@ -1,3 +1,4 @@
+import {PHONE_NUMBER,EMAIL, LOCATION} from '../components/constants';
 function Contact(){
     return(
         <section className="contact section" id="contact">
@@ -11,7 +12,7 @@ function Contact(){
                     
                         <div>
                             <h3 className="contact__title">Call Me</h3>
-                            <span className="contact__subtitle">9370735440</span>
+                            <span className="contact__subtitle">{PHONE_NUMBER}</span>
                         </div>
                     </div>
 
@@ -20,7 +21,7 @@ function Contact(){
                     
                         <div>
                             <h3 className="contact__title">Email</h3>
-                            <span className="contact__subtitle">dnyaneshbachhav2002@gmail</span>
+                            <span className="contact__subtitle">{EMAIL}</span>
                         </div>
                     </div>
 
@@ -29,7 +30,7 @@ function Contact(){
                     
                         <div>
                             <h3 className="contact__title">Location</h3>
-                            <span className="contact__subtitle">Akurdi, Pune.</span>
+                            <span className="contact__subtitle">{LOCATION}</span>
                         </div>
                     </div>
                 </div>

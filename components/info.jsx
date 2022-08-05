@@ -2,7 +2,7 @@ import Image from 'next/image';
 // import Logo from "../public/blob.svg";
 import perfil from "../public/perfil.png";
 import Logo from "../components/logo";
-import { FIRST_NAME } from './constants';
+import { FIRST_NAME, GITHUB_LINK, INSTAGRAM_LINK, LINKEDIN_LINK } from './constants';
 function Info() {
     function Image_Blob(){
         return(
@@ -16,13 +16,13 @@ function Info() {
                 <div className="home__container container grid">
                     <div className="home__content grid">
                         <div className="home__social">
-                            <a href="" className="home__social__icon">
+                            <a href={LINKEDIN_LINK} className="home__social__icon" target="__blank">
                                 <i className="uil uil-linkedin-alt"></i>
                             </a>
-                            <a href="" className="home__social__icon">
+                            <a href={GITHUB_LINK} className="home__social__icon" target="__blank">
                                 <i className="uil uil-github-alt"></i>
                             </a>
-                            <a href="" className="home__social__icon">
+                            <a href={INSTAGRAM_LINK} className="home__social__icon" target="__blank">
                                 <i className="uil uil-instagram"></i>
                             </a>
                         </div>
