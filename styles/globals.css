@@ -86,11 +86,11 @@ body.dark-theme{
       --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 /*========== Button Dark/Light ==========*/
-/* .nav__btns{
+.nav__btns{
   display: flex;
   align-items: center;
   justify-content: end;
-} */
+}
 .change__theme{
   font-size: 1.25rem;
   color: var(--title-color);
@@ -217,7 +217,7 @@ img {
 .nav__btns{
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    /* width: 100%; */
     padding-right: 2rem;
     /* padding-bottom: 0.5rem; */
 }

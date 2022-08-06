@@ -10,7 +10,7 @@ import Skills from '../components/skills'
 export default function Home() {
   return (
     <div>
-      <main>
+      <main className='main'>
       <Header/>
       <Info/>
       <About/>
