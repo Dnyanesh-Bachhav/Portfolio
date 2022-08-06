@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { BLOB_IMG } from './constants';
 function Logo(){
     return(
         <svg viewBox="0 0 200 187" className="home__blob">
@@ -14,7 +15,7 @@ function Logo(){
                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                 {/* <Image src="/perfil.png" width={125} height={125} /> */}
-                <image href="./perfil.png" className='home__blob__img' x='12' y='18' />
+                <image href={BLOB_IMG} className='home__blob__img' x='12' y='18' />
             </g>
         </svg>
     );

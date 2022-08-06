@@ -1,19 +1,52 @@
 import Script from "next/script";
 import { FIRST_NAME, STUDENT_NAME } from "./constants";
 function Header() {
+    // const themeButton = document.getElementById("theme__button");
+    // const darkTheme = "dark-theme";
+    // const iconTheme = "uil-sun";
+
+
+
+    // Activate/ deactivate the theme manually with the button
+    const setTheme = () => {
+        const themeButton = document.getElementById("theme__button");
+        const darkTheme = "dark-theme";
+        const iconTheme = "uil-sun";
+        // Previously selected topic (if user selected)
+        const selectedTheme = localStorage.getItem("selected-theme");
+        const selectedIcon = localStorage.getItem("selected-icon");
+
+        // We obtain the current theme that the interface has by validating the dark-theme class
+        const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+        const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun';
+
+        // We validate if the user perviously chose a topic
+        if (selectedTheme) {
+            // If the validation is fulfilled, we ask what the issue was to know if we activated
+            document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+            themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
+        }
+
+        // Add or remove the dark / icon theme
+        document.body.classList.toggle(darkTheme);
+        themeButton.classList.toggle(iconTheme);
+        // We ahve the theme and the current icon that the user chose
+        localStorage.setItem('selected-theme', getCurrentTheme());
+        localStorage.setItem('selected-icon', getCurrentIcon());
+    }
     function handleClick() {
         const navMenu = document.getElementById("nav-menu");
         const navToggle = document.getElementById("nav-toggle");
-        
+
         if (navToggle) {
             navToggle.addEventListener('click', () => {
                 navMenu.classList.add("showMenu");
             })
         }
-        
+
     }
-    
-    function handleClose(){
+
+    function handleClose() {
 
         const navMenu = document.getElementById("nav-menu");
         const navClose = document.getElementById("nav-close");
@@ -29,7 +62,7 @@ function Header() {
         <div>
             <header className="header" id="header">
                 <nav className="nav container">
-                <a href="#" className="nav__logo">{FIRST_NAME}</a>
+                    <a href="#" className="nav__logo">{FIRST_NAME}</a>
                     <div className="nav__menu" id="nav-menu">
                         <ul className="nav__list grid">
                             <li className="nav__item">
@@ -67,7 +100,7 @@ function Header() {
                     </div>
 
                     <div className="nav__btns">
-                        <i class="uil uil-moon change__theme" id="theme__button"></i>
+                        <i class="uil uil-moon change__theme" id="theme__button" onClick={setTheme}></i>
                         <div className="nav__toggle" id="nav-toggle" onClick={handleClick}>
                             <i className="uil uil-apps"></i>
                         </div>
