@@ -1,12 +1,7 @@
 import Script from "next/script";
 import { FIRST_NAME, STUDENT_NAME } from "./constants";
 function Header() {
-    // const themeButton = document.getElementById("theme__button");
-    // const darkTheme = "dark-theme";
-    // const iconTheme = "uil-sun";
-
-
-
+    
     // Activate/ deactivate the theme manually with the button
     const setTheme = () => {
         const themeButton = document.getElementById("theme__button");

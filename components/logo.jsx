@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { BLOB_IMG } from './constants';
 function Logo(){
     return(
