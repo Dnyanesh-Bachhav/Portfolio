@@ -12,4 +12,28 @@ const GITHUB_LINK = "https://github.com/Dnyanesh-Bachhav";
 const INSTAGRAM_LINK = "https://instagram.com/dnyanesh_bachhav_19?igshid=YmMyMTA2M2Y=";
 const ABOUT_DESCRIPTION = "Designing algorithms and flowcharts to create new software programs and systems. Producing efficient and elegant code based on requirements.";
 
-export {STUDENT_NAME,ABOUT_DESCRIPTION,FIRST_NAME,MAIN_ROLE,LINKEDIN_LINK,YOUTUBE_LINK,GITHUB_LINK,INSTAGRAM_LINK,PHONE_NUMBER,EMAIL,LOCATION,LOGO,BLOB_IMG};
+
+const PROJECTS = [
+    {
+        name: "Result Generation and Analysis System",
+        github: "https://github.com/Dnyanesh-Bachhav/Result-Generation-and-Analysis-System",
+    },
+    {
+        name: "CoinStack",
+        github: "https://github.com/Dnyanesh-Bachhav/Crypto-Market",
+    },
+    {
+        name: "IPL App",
+        github: "https://github.com/Dnyanesh-Bachhav/IPL-app",
+    },
+    {
+        name: "Dynamic Shop Application",
+        github: "https://github.com/Dnyanesh-Bachhav/Dynamic-Shop-Application",
+    },
+    {
+        name: "Marathi Status App",
+        github: "https://github.com/Dnyanesh-Bachhav/Jarvis-in-Javascript",
+    }
+]
+
+export {STUDENT_NAME,ABOUT_DESCRIPTION,FIRST_NAME,MAIN_ROLE,LINKEDIN_LINK,YOUTUBE_LINK,GITHUB_LINK,INSTAGRAM_LINK,PHONE_NUMBER,EMAIL,LOCATION,LOGO,BLOB_IMG,PROJECTS};
