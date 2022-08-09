@@ -13,10 +13,10 @@ function Skills(){
           {SKILLS.map(({ id,name,img_src }) => (
             <div
               key={id}
-              className="flex flex-col sm: items-center justify-between p-6  lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+              className="flex sm:flex flex-row items-center justify-between p-6  lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
               odd:shadow-rose-400 even:shadow-blue-400"
             >
-              <Image src={img_src} width="64px" height="64px" alt={name} />
+              <Image src={img_src} width="64px" height="64px" className="object-contain" alt={name} />
               <h3 className="font-light">{name}</h3>
             </div>
           ))}
