@@ -1,5 +1,19 @@
-import {PHONE_NUMBER,EMAIL, LOCATION} from '../components/constants';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import {PHONE_NUMBER,EMAIL, LOCATION,EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY} from '../components/constants';
+// import 'dotenv/config';
 function Contact(){
+    const form = useRef();
+    const sendMail = (e)=>{
+        // Issue: PreventDefault doesn't work when request is submitted by form...
+        e.preventDefault();
+        emailjs.sendForm(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, form.current, EMAIL_JS_PUBLIC_KEY)
+        .then((result)=>{
+             console.log("Result: "+result.text);
+        },(error)=>{
+            console.log("Error: "+error.text);
+        });
+    }
     return(
         <section className="contact section" id="contact">
             <h2 className="section__title">Contact Me</h2>
@@ -35,27 +49,27 @@ function Contact(){
                     </div>
                 </div>
 
-                <form action="" className="contact__form grid">
+                <form ref={form} className="contact__form grid">
                     <div className="contact__inputs grid">
                         <div className="contact__content">
                             <label htmlFor="" className="contact__label">Name</label>
-                            <input type="text" className="contact__input" />
+                            <input type="text" name='name' className="contact__input" required/>
                         </div>
                         <div className="contact__content">
                             <label htmlFor="" className="contact__label">Email</label>
-                            <input type="text" className="contact__input" />
+                            <input type="email" name='email' className="contact__input" required/>
                         </div>
                     </div>
                     <div className="contact__content">
-                            <label htmlFor="" className="contact__label">Project</label>
-                            <input type="text" className="contact__input" />
+                            <label htmlFor="" className="contact__label">Subject</label>
+                            <input type="text" name='subject' className="contact__input" required/>
                     </div>
                     <div className="contact__content">
                             <label htmlFor="" className="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" className="contact__input"></textarea>
+                            <textarea name='message' id="" cols="0" rows="7" className="contact__input"></textarea>
                     </div>
                     <div>
-                        <a href="#" className="button button__flex">
+                        <a href="" onClick={sendMail} className="button button__flex">
                             Send Me <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>

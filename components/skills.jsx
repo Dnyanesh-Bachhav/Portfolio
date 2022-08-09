@@ -1,48 +1,6 @@
 import Image from "next/image";
 import { SKILLS } from "./constants";
 function Skills(){
-        const experiences = [
-          {
-            id: 1,
-            title: "HTML",
-           // src: html,
-          },
-          {
-            id: 2,
-            title: "CSS",
-           // src: css,
-          },
-          {
-            id: 3,
-            title: "JavaScript",
-           // src: javascript,
-          },
-          {
-            id: 4,
-            title: "React",
-           // src: reactImage,
-          },
-          {
-            id: 5,
-            title: "Next JS",
-           // src: nextjs,
-          },
-          {
-            id: 6,
-            title: "Tailwind",
-           // src: tailwind,
-          },
-          {
-            id: 7,
-            title: "GraphQL",
-           // src: graphql,
-          },
-          {
-            id: 8,
-            title: "Node JS",
-           // src: node,
-          },
-        ];
     return(
         <section className="skills section" id="skills">
             <h2 className="section__title">Skills</h2>
