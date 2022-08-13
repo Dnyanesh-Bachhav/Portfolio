@@ -9,11 +9,11 @@ function Skills(){
     <div id="experience" className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
 
-        <div className="grid-cols-1 items-center justify-between p-6 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{display: 'grid'}} >
+        <div className="flex grid-cols-1 items-center justify-center p-6 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{display: 'grid'}} >
           {SKILLS.map(({ id,name,img_src }) => (
             <div
               key={id}
-              className="flex sm:flex flex-row items-center justify-between p-6  lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+              className="flex sm:flex flex-row items-center justify-between p-6  lg:flex-row gap-6 lg:gap-0 self-center items-center justify-between w-4/5 p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
               odd:shadow-rose-400 even:shadow-blue-400"
             >
               <Image src={img_src} width="64px" height="64px" className="object-contain" alt={name} />

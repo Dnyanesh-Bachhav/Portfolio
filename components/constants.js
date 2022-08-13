@@ -6,6 +6,7 @@ import TAILWIND from "../assets/images/Skills/Tailwind.png";
 import NODE_JS from "../assets/images/Skills/Node_JS.png";
 import React_Logo from '../assets/images/Skills/React_Logo.png';
 import GRAPHQL from "../assets/images/Skills/GraphQL.png";
+
 const STUDENT_NAME = "Dnyanesh Bachhav";
 const FIRST_NAME = "Dnyanesh";
 const MAIN_ROLE = "Web Developer";
@@ -50,6 +51,7 @@ const SKILLS = [
         name: "HTML",
         img_src: HTML,
     },
+    
     {
         id: 2,
         name: "CSS",
@@ -80,6 +82,7 @@ const SKILLS = [
         name: "GraphQL",
         img_src: GRAPHQL,
     },
+    
 ];
 
 export {STUDENT_NAME,ABOUT_DESCRIPTION,FIRST_NAME,MAIN_ROLE,LINKEDIN_LINK,YOUTUBE_LINK,GITHUB_LINK,INSTAGRAM_LINK,PHONE_NUMBER,EMAIL,LOCATION,LOGO,BLOB_IMG,PROJECTS,SKILLS,EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY};
