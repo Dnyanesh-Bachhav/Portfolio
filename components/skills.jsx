@@ -9,7 +9,7 @@ function Skills(){
     <div id="experience" className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
 
-        <div className="flex grid-cols-1 items-center justify-center p-6 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{display: 'grid'}} >
+        <div className="flex w-full grid-cols-1 items-center justify-center p-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{display: 'grid',alignItems: 'center',justifyContent:'center'}} >
           {SKILLS.map(({ id,name,img_src }) => (
             <div
               key={id}

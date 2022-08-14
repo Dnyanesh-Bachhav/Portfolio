@@ -29,7 +29,7 @@ function About(){
                     </div>
                     <div className="about__buttons">
                         <a download="" href="offer_letter.pdf" className="button button__flex" >
-                        Download CV<i class="uil uil-download-alt buton__icon"></i>
+                        Download CV<i className="uil uil-download-alt buton__icon"></i>
                         </a>
                     </div>
                 </div>

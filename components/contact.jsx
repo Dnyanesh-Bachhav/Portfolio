@@ -22,7 +22,7 @@ function Contact(){
             <div className="contact__container container grid">
                 <div>
                     <div className="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
+                        <i className="uil uil-phone contact__icon"></i>
                     
                         <div>
                             <h3 className="contact__title">Call Me</h3>
@@ -31,7 +31,7 @@ function Contact(){
                     </div>
 
                     <div className="contact__information">
-                    <i class="uil uil-envelope contact__icon"></i>
+                    <i className="uil uil-envelope contact__icon"></i>
                     
                         <div>
                             <h3 className="contact__title">Email</h3>
@@ -40,7 +40,7 @@ function Contact(){
                     </div>
 
                     <div className="contact__information">
-                    <i class="uil uil-map-marker contact__icon"></i>
+                    <i className="uil uil-map-marker contact__icon"></i>
                     
                         <div>
                             <h3 className="contact__title">Location</h3>
@@ -70,7 +70,7 @@ function Contact(){
                     </div>
                     <div>
                         <a href="" onClick={sendMail} className="button button__flex">
-                            Send Me <i class="uil uil-message button__icon"></i>
+                            Send Me <i className="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </form>
