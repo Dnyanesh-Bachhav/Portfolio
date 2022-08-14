@@ -13,12 +13,13 @@ const MAIN_ROLE = "Web Developer";
 const PHONE_NUMBER = "9370735440";
 const EMAIL = "dnyaneshbachhav2002@gmail.com";
 const LOCATION = "Akurdi, Pune.";
-const BLOB_IMG = "./perfil.png";
+const BLOB_IMG = "./Dnyanesh_Bachhav_Circular.png";
 const LINKEDIN_LINK = "https://www.linkedin.com/in/dnyanesh-bachhav/";
 const YOUTUBE_LINK = "https://www.youtube.com/channel/UCSCnbpXEUH2Pv9imvuFVrqg";
 const GITHUB_LINK = "https://github.com/Dnyanesh-Bachhav";
 const INSTAGRAM_LINK = "https://instagram.com/dnyanesh_bachhav_19?igshid=YmMyMTA2M2Y=";
-const ABOUT_DESCRIPTION = "Designing algorithms and flowcharts to create new software programs and systems. Producing efficient and elegant code based on requirements.";
+const ABOUT_DESCRIPTION = "I am a computer engineering student having interest in web-development, cross platform mobile development, machine-learning and open-source.";
+const INFO_DESCRIPTION = "Innovative and self-motivated computer engineering student with keen interest in programming and developing technical solutions for betterment of society.";
 const EMAIL_JS_SERVICE_ID = "service_6a7tm47";
 const EMAIL_JS_TEMPLATE_ID = "template_uqmmufk";
 const EMAIL_JS_PUBLIC_KEY = "It8hidJ2eT46POoOr";
@@ -85,4 +86,4 @@ const SKILLS = [
     
 ];
 
-export {STUDENT_NAME,ABOUT_DESCRIPTION,FIRST_NAME,MAIN_ROLE,LINKEDIN_LINK,YOUTUBE_LINK,GITHUB_LINK,INSTAGRAM_LINK,PHONE_NUMBER,EMAIL,LOCATION,LOGO,BLOB_IMG,PROJECTS,SKILLS,EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY};
+export {STUDENT_NAME,ABOUT_DESCRIPTION,FIRST_NAME,MAIN_ROLE,LINKEDIN_LINK,YOUTUBE_LINK,GITHUB_LINK,INSTAGRAM_LINK,PHONE_NUMBER,EMAIL,LOCATION,LOGO,BLOB_IMG,PROJECTS,SKILLS,EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY,INFO_DESCRIPTION};

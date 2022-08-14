@@ -2,14 +2,9 @@ import Image from 'next/image';
 // import Logo from "../public/blob.svg";
 import perfil from "../public/perfil.png";
 import Logo from "../components/logo";
-import { FIRST_NAME, GITHUB_LINK, INSTAGRAM_LINK, LINKEDIN_LINK } from './constants';
+import { FIRST_NAME, GITHUB_LINK, INFO_DESCRIPTION, INSTAGRAM_LINK, LINKEDIN_LINK } from './constants';
 function Info() {
-    function Image_Blob(){
-        return(
-            <image src="/perfil.png" width={24} height={24} />
-                            
-        );
-    }
+
     return (
         <>
             <section className="home section" id="home">
@@ -27,13 +22,12 @@ function Info() {
                             </a>
                         </div>
                         <div className="home__img">
-                            {/* <Image_Blob/> */}
                             <Logo/>
                         </div>
                         <div className="home__data">
                             <h1 className="home__title">Hi, I'm {FIRST_NAME}</h1>
                             <h3 className="home__subtitle">Web Developer</h3>
-                            <p className="home__description">I am open-source enthusiast, I love to play open source games non iste! Nulla nemo quos corrupti hic ipsum.</p>
+                            <p className="home__description">{INFO_DESCRIPTION}</p>
                             <a href="" className="button button__flex">
                                 Contact Me <span className="button__icon"><i className="uil uil-message"></i></span>
                             </a>

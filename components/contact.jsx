@@ -1,12 +1,13 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {PHONE_NUMBER,EMAIL, LOCATION,EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY} from '../components/constants';
-// import 'dotenv/config';
+
 function Contact(){
     const form = useRef();
     const sendMail = (e)=>{
         // Issue: PreventDefault doesn't work when request is submitted by form...
         e.preventDefault();
+
         emailjs.sendForm(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, form.current, EMAIL_JS_PUBLIC_KEY)
         .then((result)=>{
              console.log("Result: "+result.text);

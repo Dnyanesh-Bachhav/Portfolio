@@ -6,14 +6,14 @@ function Skills(){
             <h2 className="section__title">Skills</h2>
             <span className="section__subtitle">My Technical level</span>
             
-    <div id="experience" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+    <div id="experience" >
+      <div className="flex items-center justify-center px-8 py-16 text-center">
 
-        <div className="flex w-full grid-cols-1 items-center justify-center p-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{display: 'grid',alignItems: 'center',justifyContent:'center'}} >
+        <div className="grid  w-full grid-cols-1 items-center justify-around gap-0 sm:grid-cols-2 gap-0 lg:grid-cols-3 gap-8">
           {SKILLS.map(({ id,name,img_src }) => (
             <div
               key={id}
-              className="flex sm:flex flex-row items-center justify-between p-6  lg:flex-row gap-6 lg:gap-0 self-center items-center justify-between w-4/5 p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+              className="flex place-content-center sm:flex flex-row items-center justify-center p-6 gap-0  lg:flex-row gap-6 lg:gap-0 self-center items-center justify-between w-4/5 p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
               odd:shadow-rose-400 even:shadow-blue-400"
             >
               <Image src={img_src} width="64px" height="64px" className="object-contain" alt={name} />
@@ -23,7 +23,7 @@ function Skills(){
         </div>
       </div>
     </div>
-    </section>
+        </section>
     );
 }
 export default Skills;
