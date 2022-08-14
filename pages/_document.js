@@ -12,7 +12,7 @@ class MyDocument extends Document{
             <Html>
                 <Head>
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-            
+                <link rel="icon" type="image/x-icon" href="/Favicon.png" />
                 </Head>
                     <body>
                         <Main />
