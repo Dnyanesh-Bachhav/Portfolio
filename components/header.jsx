@@ -61,31 +61,31 @@ function Header() {
                     <div className="nav__menu" id="nav-menu">
                         <ul className="nav__list grid">
                             <li className="nav__item">
-                                <a href="#home" className="nav__link">
+                                <a href="#home" rel="noreferrer" className="nav__link">
                                     <i className="uil uil-estate nav__icon"></i>
                                     Home
                                 </a>
                             </li>
                             <li className="nav__item">
-                                <a href="#about" className="nav__link">
+                                <a href="#about" rel="noreferrer" className="nav__link">
                                     <i className="uil uil-user nav__icon"></i>
                                     About
                                 </a>
                             </li>
                             <li className="nav__item">
-                                <a href="#skills" className="nav__link">
+                                <a href="#skills" rel="noreferrer" className="nav__link">
                                     <i className="uil uil-file-alt nav__icon"></i>
                                     Skills
                                 </a>
                             </li>
                             <li className="nav__item">
-                                <a href="#portfolio" className="nav__link">
+                                <a href="#portfolio" rel="noreferrer" className="nav__link">
                                     <i className="uil uil-scenery nav__icon"></i>
                                     Portfolio
                                 </a>
                             </li>
                             <li className="nav__item">
-                                <a href="#contact" className="nav__link">
+                                <a href="#contact" rel="noreferrer" className="nav__link">
                                     <i className="uil uil-message nav__icon"></i>
                                     Contact
                                 </a>

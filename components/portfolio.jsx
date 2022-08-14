@@ -13,12 +13,12 @@ function Portfolio(){
                     PROJECTS.map((project,index)=>(
                         <article className="portfolio__item" key={index}>
                     <div className="portfolio__item__image">
-                        <Image src={portfolio2} />
+                        <Image src={portfolio2} alt={`Project ${index}`} />
                         {/* <img src="../assets/images/portfolio2.jpg" alt="" srcset="" /> */}
                     </div>
                     <h3 className="project__title">{project.name}</h3>
-                    <a href={project.github} target="_blank" rel="noopener" className="button__portfolio">Github</a>
-                    <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
+                    <a href={project.github} target="_blank" rel="noreferrer" className="button__portfolio">Github</a>
+                    <a href="https://github.com/Dnyanesh-Bachhav" rel="noreferrer" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
                 ))
             }
