@@ -17,7 +17,7 @@ function Portfolio(){
                         {/* <img src="../assets/images/portfolio2.jpg" alt="" srcset="" /> */}
                     </div>
                     <h3 className="project__title">{project.name}</h3>
-                    <a href={project.github} target="_blank" className="button__portfolio">Github</a>
+                    <a href={project.github} target="_blank" rel="noopener" className="button__portfolio">Github</a>
                     <a href="https://github.com/Dnyanesh-Bachhav" target="_blank" className="button__portfolio ml-2">Demo</a>
                 </article>
                 ))
