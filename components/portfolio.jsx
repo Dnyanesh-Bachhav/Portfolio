@@ -11,7 +11,7 @@ function Portfolio(){
             <div className="portfolio__container container grid">
                 {
                     PROJECTS.map((project,index)=>(
-                        <article className="portfolio__item">
+                        <article className="portfolio__item" key={index}>
                     <div className="portfolio__item__image">
                         <Image src={portfolio2} />
                         {/* <img src="../assets/images/portfolio2.jpg" alt="" srcset="" /> */}

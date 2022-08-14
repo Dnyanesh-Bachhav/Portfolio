@@ -95,7 +95,7 @@ function Header() {
                     </div>
 
                     <div className="nav__btns">
-                        <i class="uil uil-moon change__theme" id="theme__button" onClick={setTheme}></i>
+                        <i className="uil uil-moon change__theme" id="theme__button" onClick={setTheme}></i>
                         <div className="nav__toggle" id="nav-toggle" onClick={handleClick}>
                             <i className="uil uil-apps"></i>
                         </div>

@@ -12,13 +12,11 @@ class MyDocument extends Document{
             <Html>
                 <Head>
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-                <script src="../js/demo.js"></script>
             
                 </Head>
                     <body>
                         <Main />
                         <NextScript />
-                        <Script src='../js/demo.js' ></Script>
                     </body>
             </Html>
         );
