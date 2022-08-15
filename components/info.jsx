@@ -28,7 +28,7 @@ function Info() {
                             <h1 className="home__title">Hi, I&apos;m {FIRST_NAME}</h1>
                             <h3 className="home__subtitle">Web Developer</h3>
                             <p className="home__description">{INFO_DESCRIPTION}</p>
-                            <a href="" rel="noreferrer" className="button button__flex">
+                            <a href="#contact" rel="noreferrer" className="button button__flex">
                                 Contact Me <span className="button__icon"><i className="uil uil-message"></i></span>
                             </a>
                         </div>
