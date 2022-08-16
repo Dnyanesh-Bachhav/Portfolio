@@ -528,6 +528,7 @@ img {
 }
 .footer__container{
   row-gap: 3.5rem;
+  overflow: hidden;
 }
 .footer__bg{
   background-color: var(--first-color-second);
@@ -620,7 +621,12 @@ img {
   .portfolio__container{
     grid-template-columns: repeat(1,1fr);
   }
-
+  .header,
+  .main,
+  .footer__container{
+    padding: 0;
+    /* overflow: hidden; */
+  }
 }
 /* For devices between 350px to 567px */
 /* @media screen and (min-width: 567px) {
@@ -683,7 +689,6 @@ img {
   .portfolio__container{
     grid-template-columns: repeat(2,1fr);
   }
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -775,7 +780,11 @@ img {
   .footer__copy{
     margin-top: 4.5rem;
   }
-
+  .header,
+  .main,
+  .footer__container{
+    padding: 0;
+  }
 
 }
 
@@ -797,5 +806,9 @@ img {
   }
   .contact__inputs{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .skills{
+    display: grid;
+
   }
 }

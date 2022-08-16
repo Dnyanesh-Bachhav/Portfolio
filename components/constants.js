@@ -65,12 +65,12 @@ const SKILLS = [
     },
     {
         id: 4,
-        name: "React_JS",
+        name: "React JS",
         img_src: React_Logo,
     },
     {
         id: 5,
-        name: "Node_JS",
+        name: "Node JS",
         img_src: NODE_JS,
     },
     {
