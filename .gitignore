@@ -30,4 +30,5 @@ yarn-error.log*
 
 # vercel
 .vercel
-../components/constants.js
+
+components/constants.js
