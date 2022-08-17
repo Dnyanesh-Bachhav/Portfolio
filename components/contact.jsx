@@ -7,7 +7,6 @@ import {EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY} from '../E
 function Contact(){
     const form = useRef();
     const sendMail = (e)=>{
-        // Issue: PreventDefault doesn't work when request is submitted by form...
         e.preventDefault();
 
         emailjs.sendForm(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, form.current, EMAIL_JS_PUBLIC_KEY)
@@ -17,30 +16,7 @@ function Contact(){
             console.log("Error: "+error.text);
         });
     }
-    const handleSubmit = async (e)=>{
-        e.preventDefault();
-        const formData = {};
-        let headers = {
-            'Content-type': 'text/html'
-        };
-        Array.from(e.currentTarget.elements).forEach(field => {
-            if(!field.name) return;
-            formData[field.name] = field.value;
-            // console.log(field.value);
-        });
-        
-        fetch('/api/mail',{
-            method: 'POST',
-            headers: headers,
-            body: JSON.stringify(formData),
-        });
-        // console.log(JSON.parse(data1));
-        // const dq = await getServerSideProps();
-        // console.log("DQ: "+dq);
-        // console.log(formData.email);
-
-        // console.log(typeof formData);
-    }
+    
     return(
         <section className="contact section" id="contact">
             <h2 className="section__title">Contact Me</h2>
