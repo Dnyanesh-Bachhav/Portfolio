@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import {PHONE_NUMBER,EMAIL, LOCATION,EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY} from '../components/constants';
+import {PHONE_NUMBER,EMAIL, LOCATION} from '../components/constants';
+import {EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY} from '../EMAIL_JS';
+
 
 function Contact(){
     const form = useRef();
@@ -14,6 +16,30 @@ function Contact(){
         },(error)=>{
             console.log("Error: "+error.text);
         });
+    }
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        const formData = {};
+        let headers = {
+            'Content-type': 'text/html'
+        };
+        Array.from(e.currentTarget.elements).forEach(field => {
+            if(!field.name) return;
+            formData[field.name] = field.value;
+            // console.log(field.value);
+        });
+        
+        fetch('/api/mail',{
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(formData),
+        });
+        // console.log(JSON.parse(data1));
+        // const dq = await getServerSideProps();
+        // console.log("DQ: "+dq);
+        // console.log(formData.email);
+
+        // console.log(typeof formData);
     }
     return(
         <section className="contact section" id="contact">
@@ -50,7 +76,7 @@ function Contact(){
                     </div>
                 </div>
 
-                <form ref={form} className="contact__form grid">
+                <form ref={form} onSubmit={sendMail} className="contact__form grid">
                     <div className="contact__inputs grid">
                         <div className="contact__content">
                             <label htmlFor="" className="contact__label">Name</label>
@@ -70,13 +96,17 @@ function Contact(){
                             <textarea name='message' id="" cols="0" rows="7" className="contact__input"></textarea>
                     </div>
                     <div>
-                        <a href="" onClick={sendMail} className="button button__flex">
-                            Send Me <i className="uil uil-message button__icon"></i>
-                        </a>
+                        {/* <a href="" onClick={sendMail} className="button button__flex"> */}
+                            <button className="button button__flex">
+                                Send Me <i className="uil uil-message button__icon"></i>
+
+                            </button>
+                        {/* </a> */}
                     </div>
                 </form>
             </div>
         </section>
     );
 }
+
 export default Contact;

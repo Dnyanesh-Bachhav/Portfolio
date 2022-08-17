@@ -31,4 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-components/constants.js
+EMAIL_JS.js
