@@ -31,4 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-EMAIL_JS.js
+# EMAIL_JS.js

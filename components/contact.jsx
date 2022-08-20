@@ -8,7 +8,6 @@ function Contact(){
     const form = useRef();
     const sendMail = (e)=>{
         e.preventDefault();
-
         emailjs.sendForm(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, form.current, EMAIL_JS_PUBLIC_KEY)
         .then((result)=>{
              console.log("Result: "+result.text);
