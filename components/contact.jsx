@@ -11,6 +11,7 @@ function Contact(props){
         emailjs.sendForm( props.EMAIL_JS_SERVICE_ID,  props.EMAIL_JS_TEMPLATE_ID, form.current,  props.EMAIL_JS_PUBLIC_KEY)
         .then((result)=>{
              console.log("Result: "+result.text);
+             alert("Email send...");
         },(error)=>{
             console.log("Error: "+error.text);
         });
