@@ -2,7 +2,8 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {PHONE_NUMBER,EMAIL, LOCATION} from '../components/constants';
 import {EMAIL_JS_SERVICE_ID,EMAIL_JS_TEMPLATE_ID,EMAIL_JS_PUBLIC_KEY} from '../EMAIL_JS';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact(props){
     const form = useRef();
@@ -11,8 +12,10 @@ function Contact(props){
         emailjs.sendForm( props.EMAIL_JS_SERVICE_ID,  props.EMAIL_JS_TEMPLATE_ID, form.current,  props.EMAIL_JS_PUBLIC_KEY)
         .then((result)=>{
              console.log("Result: "+result.text);
-             alert("Email send...");
+             toast.success("Email sent successfully!");
+            //  alert("Email send...");
         },(error)=>{
+            toast("Something went wrong..!!!");
             console.log("Error: "+error.text);
         });
     }
@@ -20,6 +23,7 @@ function Contact(props){
     return(
         <section className="contact section" id="contact">
             <h2 className="section__title">Contact Me</h2>
+            <ToastContainer/>
             <span className="section__subtitle">Get in touch</span>
 
             <div className="contact__container container grid">
