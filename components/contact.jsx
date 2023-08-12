@@ -12,6 +12,7 @@ function Contact(props){
         emailjs.sendForm( props.EMAIL_JS_SERVICE_ID,  props.EMAIL_JS_TEMPLATE_ID, form.current,  props.EMAIL_JS_PUBLIC_KEY)
         .then((result)=>{
              console.log("Result: "+result.text);
+             document.getElementById("form").reset();
              toast.success("Email sent successfully!");
             //  alert("Email send...");
         },(error)=>{
@@ -56,7 +57,7 @@ function Contact(props){
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendMail} className="contact__form grid">
+                <form ref={form} id='form' onSubmit={sendMail} className="contact__form grid">
                     <div className="contact__inputs grid">
                         <div className="contact__content">
                             <label htmlFor="" className="contact__label">Name</label>
