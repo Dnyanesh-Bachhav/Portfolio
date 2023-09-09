@@ -42,7 +42,7 @@ const PROJECTS = [
     },
     {
         name: "Marathi Status App",
-        github: "https://github.com/Dnyanesh-Bachhav/Jarvis-in-Javascript",
+        github: "https://github.com/Dnyanesh-Bachhav/Marathi-Status-App",
     }
 ];
 const SKILLS = [

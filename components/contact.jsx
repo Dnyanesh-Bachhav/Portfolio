@@ -9,11 +9,18 @@ function Contact(props){
     const form = useRef();
     const sendMail = (e)=>{
         e.preventDefault();
+        const id = toast.loading("Sending mail...");
         emailjs.sendForm( props.EMAIL_JS_SERVICE_ID,  props.EMAIL_JS_TEMPLATE_ID, form.current,  props.EMAIL_JS_PUBLIC_KEY)
         .then((result)=>{
              console.log("Result: "+result.text);
              document.getElementById("form").reset();
-             toast.success("Email sent successfully!");
+            //  toast.success("Email sent successfully!");
+             toast.update(id, {
+                render: "Email sent successfully!",
+                type: 'success',
+                isLoading: false,
+                autoClose: 2000
+             });
             //  alert("Email send...");
         },(error)=>{
             toast("Something went wrong..!!!");
@@ -24,7 +31,10 @@ function Contact(props){
     return(
         <section className="contact section" id="contact">
             <h2 className="section__title">Contact Me</h2>
-            <ToastContainer/>
+            <ToastContainer
+            autoClose="5000"            
+            hideProgressBar={ false }
+            />
             <span className="section__subtitle">Get in touch</span>
 
             <div className="contact__container container grid">
