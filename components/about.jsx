@@ -28,7 +28,7 @@ function About(){
                         </div>
                     </div>
                     <div className="about__buttons">
-                        <a download="Dnyanesh Resume" href="/Dnyanesh Resume 1.pdf" rel="noreferrer" className="button button__flex" >
+                        <a download="Dnyanesh Resume" href="/Dnyanesh_Bachhav_CV.pdf" rel="noreferrer" className="button button__flex" >
                         Download CV<i className="uil uil-download-alt buton__icon"></i>
                         </a>
                     </div>
