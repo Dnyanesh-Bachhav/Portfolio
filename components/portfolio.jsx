@@ -1,7 +1,7 @@
 import Image from "next/image";
 import portfolio2 from "../assets/images/portfolio2.jpg";
 
-import Project1 from '../assets/images/Project_1.png';
+// import Project1 from '../assets/images/Project_1.png';
 import { PROJECTS } from "./constants";
 function Portfolio(){
     return(
@@ -14,7 +14,7 @@ function Portfolio(){
                         <article className="portfolio__item" key={index}>
                     <div className="portfolio__item__image">
                         <Image src={portfolio2} alt={`Project ${index}`} />
-                        {/* <img src="../assets/images/portfolio2.jpg" alt="" srcset="" /> */}
+                        {/* <img src="../assets/images/portfolio2.jpg" alt={`Project ${index}`} /> */}
                     </div>
                     <h3 className="project__title">{project.name}</h3>
                     <a href={project.github} target="_blank" rel="noreferrer" className="button__portfolio">Github</a>
